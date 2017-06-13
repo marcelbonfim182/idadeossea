@@ -1,0 +1,45 @@
+{
+  "ProjectName": "Idade Ossea",
+  "ProjectGuid": "9251c13e-d816-4936-9b2c-262b6b74aaf0",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.IdadeOssea",
+  "DisplayName": "Idade Ossea",
+  "Author": "",
+  "Description": "Idade Ossea",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "6.4.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{e8839c59-9113-46be-af38-f42945889b62}",
+  "WP8ProductID": "{1728962c-5584-44b1-9568-7e1673ec4d81}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.IdadeOssea",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
