@@ -2,11 +2,11 @@
   "ProjectName": "Idade Ossea",
   "ProjectGuid": "9251c13e-d816-4936-9b2c-262b6b74aaf0",
   "projectVersion": 1,
-  "AppIdentifier": "com.mesmera.IdadeOssea",
+  "AppIdentifier": "com.mesmera.idadeossea",
   "DisplayName": "Idade Ossea",
   "Author": "Mesmera Comunicação Interativa e Digital",
   "Description": "Idade Ossea",
-  "BundleVersion": "1.1",
+  "BundleVersion": "2.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",
