@@ -6,63 +6,188 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
+    <link href="styles/mainandroid.css" rel="stylesheet" /> 
+    <link href="styles/mobiscroll.custom-2.6.2.mi.css" rel="stylesheet" type="text/css" />
 
     <link href="styles/overrides.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+    
+
+</head>
+
+<body id="kendoUiMobileApp">
+    
+    <div data-role="view" id="zero" data-title="" class="disablescroll">
+            <div class="teste"></div> 
+    </div>
+    
+    <div data-role="view" id="one" data-title="" class="disablescroll">
+
+            <div class="logo"></div>
+            <div class="backtop"></div>
+            <div class="backbottom"></div>
+            <div class="handback"></div>
+            <a class="man_btn" href="#male_idadeossea" data-transition="slide:up" data-role="button" data-click="reset"></a>
+            <a class="woman_btn" href="#female_idadeossea" data-transition="slide:up" data-role="button" data-click="reset2"></a>
+            <div class="btnclickstop"></div>
+            <a href="#info" data-transition="slide:left" data-role="button" class="btn_info_white_home"></a>
+                <div class="modalinfo" data-role="modalview" id="foo">
+                    <a class="modalclose" data-click="closeModalView" data-role="button">X</a>
+                </div>
+     <script>
+        function closeModalView(e) {
+        // find the closest modal view, relative to the button element.
+        var modalView = e.sender.element.closest("[data-role=modalview]").data("kendoMobileModalView");
+        modalView.close();
+    }  
+    
+        </script>
+        
+        </div>
+ 
+        
+        <div data-role="view" id="male_idadeossea" data-title="" class="idadeosseaback disablescroll">
+            <a class="btn_back_white" data-role="button" data-transition="slide:down" href="#one" data-click="reset"></a>
+            <div class="titulo_white">IDADE <span>ÓSSEA</span></div>
+            <div class="btn_show_male"></div>
+            <div data-role="scroller" data-strech="true" data-zoom="true" id="boys_8meses"  class="contentback_idadeossea" style="display:block!important;">
+
+                 
+            </div>
+            
+            
+             <input type="text"  id="demo_dummy" class="idadeosseainput i-txt dwtd">
+             <select name="demo" id="demo" class="f-dd">
+       	 <option  value="boys_8meses">8 Meses</option>
+			<option  value="boys_10meses">10 Meses</option>
+			<option  value="boys_1ano">1 Ano</option>
+			<option  value="boys_14meses">14 Meses</option>
+			<option  value="boys_16meses">16 Meses</option>
+			<option  value="boys_18meses">18 Meses</option>
+			<option  value="boys_20meses">20 Meses</option>
+			<option  value="boys_2anos">2 Anos</option>
+			<option  value="boys_28meses">28 Meses</option>
+			<option  value="boys_30meses">30 Meses</option>
+			<option  value="boys_3anos">3 Anos</option>
+			<option  value="boys_3anose6meses">3 Anos e 6 Meses</option>
+			<option  value="boys_4anos">4 Anos</option>
+			<option  value="boys_4anose6meses">4 Anos e 6 Meses</option>
+			<option  value="boys_5anos">5 Anos</option>
+			<option  value="boys_5anose6meses">5 Anos e 6 Meses</option>
+			<option  value="boys_6anos">6 Anos</option>
+			<option  value="boys_7anos">7 Anos</option>
+			<option  value="boys_8anos">8 Anos</option>
+			<option  value="boys_9anos">9 Anos</option>
+			<option  value="boys_10anos">10 Anos</option>
+			<option  value="boys_11anos">11 Anos</option>
+			<option  value="boys_12anos">12 Anos</option>
+			<option  value="boys_13anos">13 Anos</option>
+			<option  value="boys_14anos">14 Anos</option>
+			<option  value="boys_15anos">15 Anos</option>
+			<option  value="boys_16anos">16 Anos</option>
+			<option  value="boys_17anos">17 Anos</option>
+			<option  value="boys_18anos">18 Anos</option>
+		</select>  
+            
+        </div>
+        
+      
+      
+        
+        
+        <div data-role="view" id="female_idadeossea" data-title="" class="idadeosseaback disablescroll">
+            <a class="btn_back_white" data-role="button" data-transition="slide:down" href="#one" data-click="reset2"></a>
+            <div class="titulo_white">IDADE <span>ÓSSEA</span></div>
+            <div class="btn_show_female"></div>
+            <div data-role="scroller" data-strech="true" data-zoom="true" id="boys_8meses"  class="contentback_idadeossea2" style="display:block!important;">
+
+                 
+            </div>
+                
+            <input type="text"  id="demo_dummy" class="idadeosseainput i-txt2 dwtd">
+            <select name="demo2" id="demo2" class="f-dd2">
+       	 <option  value="girls_8meses">8 Meses</option>
+			<option  value="girls_10meses">10 Meses</option>
+			<option  value="girls_1ano">1 Ano</option>
+			<option  value="girls_14meses">14 Meses</option>
+			<option  value="girls_16meses">16 Meses</option>
+			<option  value="girls_18meses">18 Meses</option>
+			<option  value="girls_20meses">20 Meses</option>
+			<option  value="girls_2anos">2 Anos</option>
+			<option  value="girls_28meses">28 Meses</option>
+			<option  value="girls_30meses">30 Meses</option>
+			<option  value="girls_3anos">3 Anos</option>
+			<option  value="girls_3anose6meses">3 Anos e 6 Meses</option>
+			<option  value="girls_4anos">4 Anos</option>
+			<option  value="girls_4anose6meses">4 Anos e 6 Meses</option>
+			<option  value="girls_5anos">5 Anos</option>
+			<option  value="girls_5anose6meses">5 Anos e 6 Meses</option>
+			<option  value="girls_6anos">6 Anos</option>
+			<option  value="girls_7anos">7 Anos</option>
+			<option  value="girls_8anos">8 Anos</option>
+			<option  value="girls_9anos">9 Anos</option>
+			<option  value="girls_10anos">10 Anos</option>
+			<option  value="girls_11anos">11 Anos</option>
+			<option  value="girls_12anos">12 Anos</option>
+			<option  value="girls_13anos">13 Anos</option>
+			<option  value="girls_14anos">14 Anos</option>
+			<option  value="girls_15anos">15 Anos</option>
+			<option  value="girls_16anos">16 Anos</option>
+			<option  value="girls_17anos">17 Anos</option>
+			<option  value="girls_18anos">18 Anos</option>
+
+		</select>  
+            
+        </div>
 
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="scripts/mobiscroll.custom-2.6.2.min.js" type="text/javascript"></script>
     <script src="app.js"></script>
-</head>
+    <script src="scripts/NativePageTransitionsKendoAdapter.js" type="text/javascript"></script>
 
-<body id="kendoUiMobileApp">
-    <script src="components/home/index.js"></script>
-    <div data-role="layout" data-id="main">
-        <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-            </div>
-        </header>
-        <footer data-role="footer">
-            <div data-role="tabstrip" id="navigation-container">
-                <a href="components/home/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.home.title"></span></a>
-            </div>
-            <div id="navigation-container-more" style="display: none">
-            </div>
-        </footer>
-    </div>
+        <script>
+           var app = new kendo.mobile.Application(document.body, { transition: "slide" });
+           
+            function reset() {
+               console.log($(".contentback_idadeossea").data("kendoMobileScroller").reset());
+           }
+           function reset2() {
+               console.log($(".contentback_idadeossea2").data("kendoMobileScroller").reset());
+           }
+            
+            
+       </script>
+        
+        <!-- Gera autotransition -->	
+        <script type="text/javascript">
+         $(window).load(function() {
+                document.addEventListener("deviceready", onDeviceReady, false);
+                function onDeviceReady() {
+                    
+                navigator.splashscreen.hide();
+                //app.navigate("#one","up");
+                
+                
+                window.plugins.nativepagetransitions.slide({
+                // the defaults for direction, duration, etc are all fine
+                "href" : "#one",
+                "direction"      : "up"
+                });
+                
+                
+                }
+             });
+            
 
-
-    <div id="navigation-show-more-view" data-role="view" data-title="Show More" data-layout="main">
-        <header data-role="header">
-            <div data-role="navbar">
-                <span data-bind="text: strings._app.showMoreTitle"></span>
-            </div>
-        </header>
-        <ul data-role="listview" data-style="inset" data-click="app.listViewClick">
-        </ul>
-    </div>
-
-    <div data-role="layout" data-id="main-nonav">
-        <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-            </div>
-        </header>
-        <footer data-role="footer">
-        </footer>
-    </div>
-    <div id="notify" class="notify-pop-up">
-        <span class="notify-pop-up__content"></span>
-    </div>
-    <!--  start index html save -->
-    <!--  end index html save -->
-
-    <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
-    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
-    <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
+        </script>
+    
+        <div  data-role="view" id="info" data-title="" class="disablescroll modalinfo">
+            <a class="btn_back_gray" data-role="button" data-transition="slide:right" href="#one"></a>   
+            <div class="km-content"></div> 
+        </div>
+        
 </body>
 
 </html>
