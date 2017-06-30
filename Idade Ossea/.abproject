@@ -2,11 +2,11 @@
   "ProjectName": "Idade Ossea",
   "ProjectGuid": "9251c13e-d816-4936-9b2c-262b6b74aaf0",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.IdadeOssea",
+  "AppIdentifier": "com.mesmera.IdadeOssea",
   "DisplayName": "Idade Ossea",
-  "Author": "",
+  "Author": "Mesmera Comunicação Interativa e Digital",
   "Description": "Idade Ossea",
-  "BundleVersion": "1.0",
+  "BundleVersion": "1.1",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",
@@ -42,7 +42,5 @@
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
   ],
-  "CorePlugins": [
-    "com.telerik.plugins.nativepagetransitions@0.6.5"
-  ]
+  "iOSDeploymentTarget": "6.0"
 }
