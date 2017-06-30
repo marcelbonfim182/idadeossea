@@ -7,7 +7,7 @@
   "Author": "Mesmera Comunicação Interativa e Digital",
   "Description": "Idade Ossea",
   "BundleVersion": "2.0",
-  "AndroidVersionCode": "1",
+  "AndroidVersionCode": "3",
   "iOSDeviceFamily": [
     "1",
     "2"
