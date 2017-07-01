@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
-    <link href="styles/mainandroid.css" rel="stylesheet" /> 
+    <!--<link href="styles/mainandroid.css" rel="stylesheet" /> Se for android habilitar esse CSS--->
+    <link href="styles/mainios.css" rel="stylesheet" />  
     <link href="styles/mobiscroll.custom-2.6.2.mi.css" rel="stylesheet" type="text/css" />
 
     <link href="styles/overrides.css" rel="stylesheet">
@@ -27,8 +28,8 @@
             <div class="backtop"></div>
             <div class="backbottom"></div>
             <div class="handback"></div>
-            <a class="man_btn" href="#male_idadeossea" data-transition="slide:up" data-role="button" data-click="reset"></a>
-            <a class="woman_btn" href="#female_idadeossea" data-transition="slide:up" data-role="button" data-click="reset2"></a>
+            <a class="man_btn" href="#male_idadeossea" data-transition="slide:up" data-role="button" data-click="removeanime"></a>
+            <a class="woman_btn" href="#female_idadeossea" data-transition="slide:up" data-role="button" data-click="removeanime"></a>
             <div class="btnclickstop"></div>
             <a href="#info" data-transition="slide:left" data-role="button" class="btn_info_white_home"></a>
                 <div class="modalinfo" data-role="modalview" id="foo">
@@ -56,7 +57,7 @@
             </div>
             
             
-             <input type="text"  id="demo_dummy" class="idadeosseainput i-txt dwtd">
+             <input type="text"  id="demo_dummy" class="idadeosseainput i-txt dwtd" onClick="chama()">
              <select name="demo" id="demo" class="f-dd">
        	 <option  value="boys_8meses">8 Meses</option>
 			<option  value="boys_10meses">10 Meses</option>
@@ -151,12 +152,26 @@
            var app = new kendo.mobile.Application(document.body, { transition: "slide" });
            
             function reset() {
+               $( ".km-scroll-container" ).addClass( "smoothanimation" );
                console.log($(".contentback_idadeossea").data("kendoMobileScroller").reset());
            }
            function reset2() {
+               $( ".km-scroll-container" ).addClass( "smoothanimation" );
                console.log($(".contentback_idadeossea2").data("kendoMobileScroller").reset());
            }
+           
+            function removeanime(){
+                $( ".km-scroll-container" ).removeClass( "smoothanimation" );
+            }
             
+            function chamahandanimation(){
+                $( ".km-scroll-container" ).addClass( "trocamaocontainer" );
+            }
+            
+            function remove_chamahandanimation(){
+                $( ".km-scroll-container" ).removeClass( "trocamaocontainer" );
+            }
+
             
        </script>
         
