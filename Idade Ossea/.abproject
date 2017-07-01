@@ -6,8 +6,8 @@
   "DisplayName": "Idade Ossea",
   "Author": "Mesmera Comunicação Interativa e Digital",
   "Description": "Idade Ossea",
-  "BundleVersion": "3.0",
-  "AndroidVersionCode": "10",
+  "BundleVersion": "3.1",
+  "AndroidVersionCode": "11",
   "iOSDeviceFamily": [
     "1",
     "2"
