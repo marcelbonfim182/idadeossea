@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
-    <link href="styles/mainandroid.css" rel="stylesheet" /> 
-     <!--<link href="styles/mainios.css" rel="stylesheet" /> Se for android habilitar esse CSS--->
+    <!--<link href="styles/mainandroid.css" rel="stylesheet" />  Se for android habilitar esse CSS--->
+     <link href="styles/mainios.css" rel="stylesheet" />
     <link href="styles/mobiscroll.custom-2.6.2.mi.css" rel="stylesheet" type="text/css" />
 
     <link href="styles/overrides.css" rel="stylesheet">
@@ -28,27 +28,15 @@
             <div class="backtop"></div>
             <div class="backbottom"></div>
             <div class="handback"></div>
-            <a class="man_btn" href="#male_idadeossea" data-transition="slide:up" data-role="button" data-click="removeanime"></a>
-            <a class="woman_btn" href="#female_idadeossea" data-transition="slide:up" data-role="button" data-click="removeanime"></a>
+            <a class="man_btn" href="#male_idadeossea" data-transition-native-androiddelay="250" data-transition-native-iosdelay="250" data-transition="slide:up" data-role="button" data-click="removeanime"></a>
+            <a class="woman_btn" href="#female_idadeossea" data-transition-native-androiddelay="250" data-transition-native-iosdelay="250" data-transition="slide:up" data-role="button" data-click="removeanime2"></a>
             <div class="btnclickstop"></div>
-            <a href="#info" data-transition="slide:left" data-role="button" class="btn_info_white_home"></a>
-                <div class="modalinfo" data-role="modalview" id="foo">
-                    <a class="modalclose" data-click="closeModalView" data-role="button">X</a>
-                </div>
-     <script>
-        function closeModalView(e) {
-        // find the closest modal view, relative to the button element.
-        var modalView = e.sender.element.closest("[data-role=modalview]").data("kendoMobileModalView");
-        modalView.close();
-    }  
-    
-        </script>
-        
+            <a href="#info" data-transition-native-iosdelay="250" data-transition="slide:left" data-role="button" class="btn_info_white_home"></a> 
         </div>
  
         
         <div data-role="view" id="male_idadeossea" data-title="" class="idadeosseaback disablescroll">
-            <a class="btn_back_white" data-role="button" data-transition="slide:down" href="#one" data-click="reset"></a>
+            <a class="btn_back_white" data-transition-native-androiddelay="250" data-transition-native-iosdelay="250" data-role="button" data-transition="slide:down" href="#one" data-click="reset"></a>
             <div class="titulo_white">IDADE <span>ÓSSEA</span></div>
             <div class="btn_show_male"></div>
             <div data-role="scroller" data-strech="true" data-zoom="true" id="boys_8meses"  class="contentback_idadeossea" style="display:block!important;">
@@ -97,7 +85,7 @@
         
         
         <div data-role="view" id="female_idadeossea" data-title="" class="idadeosseaback disablescroll">
-            <a class="btn_back_white" data-role="button" data-transition="slide:down" href="#one" data-click="reset2"></a>
+            <a class="btn_back_white" data-transition-native-androiddelay="250" data-transition-native-iosdelay="250" data-role="button" data-transition="slide:down" href="#one" data-click="reset2"></a>
             <div class="titulo_white">IDADE <span>ÓSSEA</span></div>
             <div class="btn_show_female"></div>
             <div data-role="scroller" data-strech="true" data-zoom="true" id="boys_8meses"  class="contentback_idadeossea2" style="display:block!important;">
@@ -152,16 +140,20 @@
            var app = new kendo.mobile.Application(document.body, { transition: "slide" });
            
             function reset() {
-               $( ".km-scroll-container" ).addClass( "smoothanimation" );
+               $( "#male_idadeossea .km-scroll-container" ).addClass( "smoothanimation" );
                console.log($(".contentback_idadeossea").data("kendoMobileScroller").reset());
            }
            function reset2() {
-               $( ".km-scroll-container" ).addClass( "smoothanimation" );
+               $( "#female_idadeossea .km-scroll-container" ).addClass( "smoothanimation" );
                console.log($(".contentback_idadeossea2").data("kendoMobileScroller").reset());
            }
            
             function removeanime(){
-                $( ".km-scroll-container" ).removeClass( "smoothanimation" );
+                $( "#male_idadeossea .km-scroll-container" ).removeClass( "smoothanimation" );
+            }
+            
+            function removeanime2(){
+                $( "#female_idadeossea .km-scroll-container" ).removeClass( "smoothanimation" );
             }
             
             function chamahandanimation(){
@@ -188,7 +180,9 @@
                 window.plugins.nativepagetransitions.slide({
                 // the defaults for direction, duration, etc are all fine
                 "href" : "#one",
-                "direction"      : "up"
+                "direction" : "up",
+                "iosdelay"  :  350,
+                "androiddelay"  :  350
                 });
                 
                 
@@ -199,7 +193,7 @@
         </script>
     
         <div  data-role="view" id="info" data-title="" class="disablescroll modalinfo">
-            <a class="btn_back_gray" data-role="button" data-transition="slide:right" href="#one"></a>   
+            <a class="btn_back_gray" data-role="button" data-transition-native-androiddelay="250" data-transition-native-iosdelay="250" data-transition="slide:right" href="#one"></a>   
             <div class="km-content"></div> 
         </div>
         
